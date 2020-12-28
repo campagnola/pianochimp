@@ -5,23 +5,39 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 200px;
 }
 
 .PianoKey {
-    width: 1.136%;
     position: absolute;
     top: 0;
 }
 
 .PianoKey-white {
-    background-color: #FFF;
+    width: 1.923%;
     border: 1px solid #000;
     height: 100%;
 }
 
+.PianoKey-white.PianoKey-pressed {
+    background-color: #AAA;
+}
+
+.PianoKey-white.PianoKey-unpressed {
+    background-color: #FFF;
+}
+
 .PianoKey-black {
-    background-color: #000;
+    width: 1.136%;
     border: 1px solid #555;
     height: 50%;
+}
+
+.PianoKey-black.PianoKey-pressed {
+    background-color: #555;
+}
+
+
+.PianoKey-black.PianoKey-unpressed {
+    background-color: #000;
 }
